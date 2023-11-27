@@ -268,7 +268,7 @@ a {
   font-weight: 700;
 }
 
-.left span {
+#company-name {
   color: #f7b928;
 }
 
@@ -320,15 +320,16 @@ a {
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 35%;
+  width: 30%;
 }
 
-.close {
-  color: #aaa;
-  float: right;
+.close-btn {
+  color: #f7b928;
   font-size: 28px;
   font-weight: bold;
   cursor: pointer;
+  display: flex;
+  justify-content: end;
 }
 
 .close:hover {
@@ -596,6 +597,7 @@ th {
   margin: 0 auto;
   padding: 4rem;
   width: 70%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 #faq-heading {
@@ -735,13 +737,18 @@ th {
   align-items: center;
   flex-direction: column;
   margin: 20px;
-  padding: 4vw;
+  min-height: 40vh;
+  padding: 6vw;
   text-align: center;
 }
 
 .customer-complaints h2 {
-  padding: 24px;
+  padding: 20px;
   text-align: center;
+}
+
+.customer-complaints h1 {
+  font-size: 26px;
 }
 
 .complaint-btn {

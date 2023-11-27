@@ -36,7 +36,7 @@
 
       <!-- responsive navbar -->
       <nav class="navbar-responsive">
-        <button type="button" class="btn-bars"> <span><i class="fas fa-bars"></i></span>
+        <button type="button" class="btn-bars" id="btn"> <span><i class="fas fa-bars"></i></span>
         </button>
         <div class="navbar-collapse">
           <span class="btn-close">
@@ -85,19 +85,19 @@
 
     <div id="content">
       <div class="left">
-        <h3>Welcome To <span>Euro Cabs</span> </h3>
+        <h3>Welcome To <span id="company-name">Euro Cabs</span></h3>
         <p>
           Trusted Taxi Service for 20 Years, Serving
           Corporations and Individuals Locally.
         </p>
         <div class="header-links">
           <a href="http://eb3.autocab.net/#/36364" id="booking-btn">Book A Cab</a>
-          <a href="http://onelink.to/5yqht7">Download Our App</a>
+          <a href="http://onelink.to/5yqht7" id="download-btn">Download Our App</a>
           <a id="openModalBtn-responsive" onclick="setupModal()" class="openModalBtn">Register As a Driver</a>
           <!-- https://forms.office.com/r/m1CS32hq9E -->
           <div id="myModal" class="modal">
             <div class="modal-content">
-              <span class="close">&times;</span>
+              <span class="close-btn">&times;</span>
               <p style="color: #000000;">Select area</p>
               <ul id="cityList">
                 <li data-link="https://www.example.com/city1">North Hertfordshire</li>
@@ -131,7 +131,7 @@
   </div>
 
   <div id="services-section">
-    <h1 class="heading">Our Services</h1>
+    <h1 class="heading" id="service-heading">Our Services</h1>
     <div class="services-grid">
       <div class="service-item" onclick="window.open('./rides.html', '_self')" target="blank">
         <img src="assets/images/rides.jpg" alt="Service 1">
@@ -322,8 +322,8 @@
   </div>
 
   <div class="customer-complaints" id="customer-complaints">
-    <h1 class="heading">Complaints Section</h1>
-    <h2>Please send us the the complaints our team will get back to you with in 24 hrs</h2>
+    <h1 class="heading Complaint-heading">Complaints Section</h1>
+    <h2 class="Complaint-heading">Please send us the the complaints our team will get back to you with in 24 hrs</h2>
     <div class="complaint-btn">
       <a href="https://forms.office.com/e/dkSCrzMfZz" id="complaint-btn">Help Me!</a>
     </div>

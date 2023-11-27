@@ -1,0 +1,221 @@
+// GSAP Animations
+// var tl = gsap.timeline();
+
+gsap.from("#main_animation, .nav-logo #content-animation",  {
+  y: -200,
+  duration: 1.8,
+  delay: 1,
+  opacity: 0,
+  stagger: 0.5
+});
+
+gsap.from(".header-wrapper",{
+  opacity: 0,
+  stagger: 0.3,
+  duration:2,
+  delay: 2,
+  x:-500,
+})
+
+gsap.from(".right-img img", {
+  duration: 2,
+  delay: 3,
+  scale:0,
+  overflow: "hidden",
+  opacity: 0,
+  stagger: 0.5
+});
+
+
+gsap.from(".site-name, .nav-item", {
+  opacity: 0,
+  duration: 2,
+  delay: 2,
+  y: -200,
+  stagger:0.2
+});
+
+
+// second-section animation
+gsap.from("#table-container",{
+  opacity: 0,
+  duration: 2,
+  delay: 2,
+  y: 200,
+  stagger:0.5,
+  scrollTrigger: {
+    trigger:"#table-container",
+    scroll:"body",
+		start: "top 60%",
+		end: "top bottom",
+    scrub:5,
+  }
+})
+
+// Third section animation
+gsap.from("#services-section", {
+  // opacity: 0,
+  // duration: 2,
+  // delay: 2,
+  // x: -300,
+  // stagger:0.5,
+  // scrollTrigger: {
+  //   trigger:"#services-section",
+  //   scroll:"body",
+	// 	start: "top 60%",
+	// 	end: "top bottom",
+  //   scrub:5,
+  // }
+})
+
+gsap.from("#services-section", {
+  // opacity: 0,
+  // duration: 2,
+  // delay: 2,
+  // y: -200,
+  // stagger:0.5,
+  // scrollTrigger: {
+  //   trigger:".service-item",
+  //   scroll:"body",
+	// 	start: "top 60%", 
+	// 	end: "bottom 33%",
+  //   scrub:5,
+  // }
+  opacity: 0,
+  duration: 2,
+  delay: 2,
+  y: 200,
+  stagger:0.4,
+  scrollTrigger: {
+    trigger:".service-item",
+    scroll:"body",
+		start: "top 85%", 
+		end: " bottom 15%",
+    scrub:5,
+  }
+});
+
+// about section
+gsap.from("#about-container", {
+  // opacity: 0,
+  // stagger: 0.3,
+  // duration:2,
+  // delay: 2,
+  // x:-500,
+  // scrollTrigger: {
+  //   trigger:".service-item",
+  //   scroll:"body",
+	// 	start: "top 0%", 
+	// 	end: " bottom 5%",
+  //   scrub:5,
+  // }
+  opacity: 0,
+  duration: 2,
+  delay: 2,
+  y: 200,
+  stagger:0.4,
+  scrollTrigger: {
+    trigger:"#about-container",
+    scroll:"body",
+		start: "top 85%", 
+		end: " bottom 15%",
+    scrub:5,
+  }
+});
+
+gsap.from("#deals-section", {
+  // opacity: 0,
+  // stagger: 0.3,
+  // duration:2,
+  // delay: 1.5,
+  // skewY:7,
+  // ease: "power4.out",
+  // x:-500,
+  // scrollTrigger: {
+  //   trigger:"#deals-section",
+  //   scroll:"body",
+	// 	start: "top 60%", 
+	// 	end: " top bottom",
+  //   scrub:5,
+  // }
+  opacity: 0,
+  duration: 2,
+  delay: 2,
+  y: 200,
+  stagger:0.4,
+  scrollTrigger: {
+    trigger:"#deals-section",
+    scroll:"body",
+		start: "top 85%", 
+		end: " bottom 15%",
+    scrub:5,
+  }
+})
+
+gsap.from('#faq-section', {
+  opacity: 0,
+  duration: 2,
+  delay: 2,
+  y: 150,
+  stagger:0.4,
+  scrollTrigger: {
+    trigger:"#faq-section",  // .accordion
+    scroll:"body",
+		start: "top 90%", 
+		end: " bottom 15%",
+    scrub:5,
+  }
+});
+
+// gsap.from('.accordion, accordion-content, .accordion-item', {
+//   opacity: 0,
+//   duration: 2,
+//   delay: 2,
+//   y: 300,
+//   stagger:0.2,
+//   scrollTrigger: {
+//     trigger:".accordion, accordion-content, .accordion-item",
+//     scroll:"body",
+// 		start: "top 85%", 
+// 		end: " bottom 15%",
+//     scrub:5,
+//   }
+// })
+
+gsap.from("#price-section, .pricing-table", {
+  opacity: 0,
+  duration: 2,
+  delay: 2,
+  y: 200,
+  stagger:0.5,
+  scrollTrigger: {
+    trigger:"#price-section",
+    scroll:"body",
+		start: "top 85%", 
+		end: " bottom 15%",
+    scrub:5,
+  }
+})
+
+gsap.from("#footer-section",{
+  duration: 2,
+  delay: 3,
+  scale:1,
+  overflow: "hidden",
+  opacity: 0,
+  stagger: 0.5,
+  scrollTrigger:{
+    trigger:"#footer-section",
+    scroll:"body",
+		start: "top 85%", 
+		end: " bottom 15%",
+    scrub:5,
+  }
+})
+
+// gsap.from('.navbar .nav_item', {opacity: 0, duration: 1, delay: 2.1, y:30, stagger: 0.2})
+
+// gsap.from('.title', {opacity: 0, duration: 1, delay: 1.6, y:30})
+// gsap.from('.description', {opacity: 0, duration: 1, delay: 1.8, y:30})
+// gsap.from('.btn', {opacity: 0, duration: 1, delay: 2.1, y:30})
+// gsap.from('.image', {opacity: 0, duration: 1, delay: 2.6, y:30})

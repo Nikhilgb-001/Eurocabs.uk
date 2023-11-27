@@ -17,3 +17,34 @@ faqItems.forEach((item) => {
     item.classList.toggle("active");
   });
 });
+
+gsap.from(".navbar", {
+  y: -50,
+  duration: 1,
+  delay: 0.5,
+  opacity: 0,
+});
+
+gsap.from(".corporate-section, corporate-info", {
+  opacity: 0,
+  duration: 1,
+  delay: 1,
+  y: 50,
+});
+
+gsap.from(".footer-section, .footer", {
+  duration: 1,
+  delay: 1,
+  scale: 1,
+  y: 100,
+  overflow: "hidden",
+  opacity: 0,
+  stagger: 0.5,
+  scrollTrigger: {
+    trigger: ".footer-section, .footer",
+    scroll: "body",
+    start: "top 85%",
+    end: " bottom 15%",
+    scrub: 5,
+  },
+});

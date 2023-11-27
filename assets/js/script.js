@@ -23,11 +23,11 @@ var setupModal = () => {
     var modal = document.getElementById("myModal");
     var btns = document.querySelectorAll(".openModalBtn"); // Select multiple buttons
 
-    var span = document.getElementsByClassName("close")[0];
+    var span = document.getElementsByClassName("close-btn")[0];
 
     btns.forEach(function (btn) {
       btn.onclick = function () {
-        modal.style.display = "block";
+        modal.style.display = "block";        
       };
     });
 
@@ -64,69 +64,69 @@ button2.addEventListener("click", setupModal);
 function displayInfo(city) {
   var cityInfo = {
     LHR: {
-      Baldock: { DayCharges: "50", NightCharges: "400" },
-      Letchworth: { DayCharges: "50", NightCharges: "400" },
-      Hitchin: { DayCharges: "50", NightCharges: "400" },
-      Henlow: { DayCharges: "50", NightCharges: "400" },
-      LangfordHanxworth: { DayCharges: "50", NightCharges: "400" },
-      Ashwell: { DayCharges: "50", NightCharges: "400" },
-      StotfoldArlserFairfeild: { DayCharges: "50", NightCharges: "400" },
-      Biggleswade: { DayCharges: "50", NightCharges: "400" },
-      Shefford: { DayCharges: "50", NightCharges: "400" },
-      Royston: { DayCharges: "50", NightCharges: "400" },
-      LowerStondon: { DayCharges: "50", NightCharges: "400" },
+      Baldock: { DayCharges: "105", NightCharges: "115" },
+      Letchworth: { DayCharges: "105", NightCharges: "115" },
+      Hitchin: { DayCharges: "105", NightCharges: "115" },
+      Henlow: { DayCharges: "115", NightCharges: "120" },
+      LangfordHanxworth: { DayCharges: "115", NightCharges: "120" },
+      Ashwell: { DayCharges: "105", NightCharges: "115" },
+      StotfoldArlserFairfeild: { DayCharges: "105", NightCharges: "115" },
+      Biggleswade: { DayCharges: "120", NightCharges: "125" },
+      Shefford: { DayCharges: "115", NightCharges: "120" },
+      Royston: { DayCharges: "120", NightCharges: "130" },
+      LowerStondon: { DayCharges: "110", NightCharges: "115" },
     },
     LTN: {
-      Baldock: { DayCharges: "50", NightCharges: "400" },
-      Letchworth: { DayCharges: "50", NightCharges: "400" },
-      Hitchin: { DayCharges: "50", NightCharges: "400" },
-      Henlow: { DayCharges: "50", NightCharges: "400" },
-      LangfordHanxworth: { DayCharges: "50", NightCharges: "400" },
-      Ashwell: { DayCharges: "50", NightCharges: "400" },
-      StotfoldArlserFairfeild: { DayCharges: "50", NightCharges: "400" },
-      Biggleswade: { DayCharges: "50", NightCharges: "400" },
-      Shefford: { DayCharges: "50", NightCharges: "400" },
-      Royston: { DayCharges: "50", NightCharges: "400" },
-      LowerStondon: { DayCharges: "50", NightCharges: "400" },
+      Baldock: { DayCharges: "42", NightCharges: "52" },
+      Letchworth: { DayCharges: "40", NightCharges: "50" },
+      Hitchin: { DayCharges: "40", NightCharges: "50" },
+      Henlow: { DayCharges: "50", NightCharges: "55" },
+      Langford: { DayCharges: "50", NightCharges: "55" },
+      Ashwell: { DayCharges: "50", NightCharges: "55" },
+      StotfoldArlserFairfeild: { DayCharges: "42", NightCharges: "52" },
+      Biggleswade: { DayCharges: "59", NightCharges: "59" },
+      Shefford: { DayCharges: "50", NightCharges: "55" },
+      Royston: { DayCharges: "59", NightCharges: "65" },
+      LowerStondon: { DayCharges: "45", NightCharges: "52" },
     },
     LGW: {
-      Baldock: { DayCharges: "50", NightCharges: "400" },
-      Letchworth: { DayCharges: "50", NightCharges: "400" },
-      Hitchin: { DayCharges: "50", NightCharges: "400" },
-      Henlow: { DayCharges: "50", NightCharges: "400" },
-      LangfordHanxworth: { DayCharges: "50", NightCharges: "400" },
-      Ashwell: { DayCharges: "50", NightCharges: "400" },
-      StotfoldArlserFairfeild: { DayCharges: "50", NightCharges: "400" },
-      Biggleswade: { DayCharges: "50", NightCharges: "400" },
-      Shefford: { DayCharges: "50", NightCharges: "400" },
-      Royston: { DayCharges: "50", NightCharges: "400" },
-      LowerStondon: { DayCharges: "50", NightCharges: "400" },
+      Baldock: { DayCharges: "160", NightCharges: "160" },
+      Letchworth: { DayCharges: "160", NightCharges: "160" },
+      Hitchin: { DayCharges: "160", NightCharges: "160" },
+      Henlow: { DayCharges: "160", NightCharges: "170" },
+      LangfordHanxworth: { DayCharges: "160", NightCharges: "170" },
+      Ashwell: { DayCharges: "160", NightCharges: "170" },
+      StotfoldArlserFairfeild: { DayCharges: "160", NightCharges: "160" },
+      Biggleswade: { DayCharges: "160", NightCharges: "170" },
+      Shefford: { DayCharges: "160", NightCharges: "170" },
+      Royston: { DayCharges: "160", NightCharges: "170" },
+      LowerStondon: { DayCharges: "160", NightCharges: "170" },
     },
     STD: {
-      Baldock: { DayCharges: "500", NightCharges: "400" },
-      Letchworth: { DayCharges: "500", NightCharges: "400" },
-      Hitchin: { DayCharges: "500", NightCharges: "400" },
-      Henlow: { DayCharges: "500", NightCharges: "400" },
-      LangfordHanxworth: { DayCharges: "500", NightCharges: "400" },
-      Ashwell: { DayCharges: "500", NightCharges: "400" },
-      StotfoldArlserFairfeild: { DayCharges: "500", NightCharges: "400" },
-      Biggleswade: { DayCharges: "500", NightCharges: "400" },
-      Shefford: { DayCharges: "500", NightCharges: "400" },
-      Royston: { DayCharges: "500", NightCharges: "400" },
-      LowerStondon: { DayCharges: "500", NightCharges: "400" },
+      Baldock: { DayCharges: "77", NightCharges: "87" },
+      Letchworth: { DayCharges: "77", NightCharges: "87" },
+      Hitchin: { DayCharges: "77", NightCharges: "87" },
+      Henlow: { DayCharges: "87", NightCharges: "92" },
+      LangfordHanxworth: { DayCharges: "87", NightCharges: "87" },
+      Ashwell: { DayCharges: "77", NightCharges: "87" },
+      StotfoldArlserFairfeild: { DayCharges: "77", NightCharges: "87" },
+      Biggleswade: { DayCharges: "97", NightCharges: "97" },
+      Shefford: { DayCharges: "87", NightCharges: "92" },
+      Royston: { DayCharges: "97", NightCharges: "97" },
+      LowerStondon: { DayCharges: "87", NightCharges: "87" },
     },
     LCY: {
-      Baldock: { DayCharges: "120", NightCharges: "400" },
-      Letchworth: { DayCharges: "120", NightCharges: "400" },
-      Hitchin: { DayCharges: "120", NightCharges: "400" },
-      Henlow: { DayCharges: "120", NightCharges: "400" },
-      LangfordHanxworth: { DayCharges: "120", NightCharges: "400" },
-      Ashwell: { DayCharges: "120", NightCharges: "400" },
-      StotfoldArlserFairfeild: { DayCharges: "50", NightCharges: "400" },
-      Biggleswade: { DayCharges: "120", NightCharges: "400" },
-      Shefford: { DayCharges: "120", NightCharges: "400" },
-      Royston: { DayCharges: "120", NightCharges: "400" },
-      LowerStondon: { DayCharges: "120", NightCharges: "400" },
+      Baldock: { DayCharges: "120", NightCharges: "125" },
+      Letchworth: { DayCharges: "120", NightCharges: "125" },
+      Hitchin: { DayCharges: "120", NightCharges: "125" },
+      Henlow: { DayCharges: "120", NightCharges: "125" },
+      LangfordHanxworth: { DayCharges: "120", NightCharges: "125" },
+      Ashwell: { DayCharges: "120", NightCharges: "125" },
+      StotfoldArlserFairfeild: { DayCharges: "120", NightCharges: "125" },
+      Biggleswade: { DayCharges: "120", NightCharges: "125" },
+      Shefford: { DayCharges: "120", NightCharges: "125" },
+      Royston: { DayCharges: "120", NightCharges: "125" },
+      LowerStondon: { DayCharges: "120", NightCharges: "125" },
     },
   };
 
@@ -231,3 +231,197 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+// GSAP Animations
+
+gsap.from("#nav-logo, #nav-elements a", {
+  y: -50,
+  duration: 1,
+  delay: 0.5,
+  opacity: 0,
+  stagger: 0.4,
+});
+
+gsap.from(".left h3, .left p, .left span, #booking-btn, #download-btn, .openModalBtn", {
+  y: 50,
+  duration: 1,
+  delay: 0.5,
+  opacity: 0,
+  stagger: 0.3,
+});
+
+// gsap.from("#download-btn, .openModalBtn", {
+//   y: 50,
+//   duration: 1,
+//   delay: 1,
+//   opacity: 0,
+//   stagger: 0.5,
+// });
+
+gsap.from("#btn", {
+  delay: 0.1,
+  opacity: -100,
+});
+
+gsap.from(".right img", {
+  x: 100,
+  duration: 1,
+  delay: 1,
+  opacity: 0,
+  stagger: 0.5,
+});
+
+// gsap.from(".site-name, .nav-item", {
+//   opacity: 0,
+//   duration: 2,
+//   delay: 2,
+//   y: -200,
+//   stagger: 0.2,
+// });
+
+// second-section animation
+gsap.from("#table-container", {
+  opacity: 0,
+  duration: 2,
+  delay: 2,
+  y: 200,
+  stagger: 0.5,
+  scrollTrigger: {
+    trigger: "#table-container",
+    scroll: "body",
+    start: "top 60%",
+    end: "top bottom",
+    scrub: 5,
+  },
+});
+
+// Third section animation
+gsap.from(".service-item, #service-heading", {
+  opacity: 0,
+  duration: 2,
+  delay: 2,
+  y: 200,
+  stagger: 0.5,
+  scrollTrigger: {
+    trigger: ".service-item, #service-heading",
+    scroll: "body",
+    start: "top 70%",
+    end: " bottom 30%",
+    scrub: 5,
+  },
+});
+
+// about section
+gsap.from("#about-container, .para, #map", {
+  opacity: 0,
+  duration: 2,
+  delay: 2,
+  y: 200,
+  stagger: 0.4,
+  scrollTrigger: {
+    trigger: "#about-container",
+    scroll: "body",
+    start: "top 85%",
+    end: " bottom 15%",
+    scrub: 5,
+  },
+});
+
+gsap.from("#deals-section", {
+  opacity: 0,
+  duration: 2,
+  delay: 2,
+  y: 200,
+  stagger: 0.4,
+  scrollTrigger: {
+    trigger: "#deals-section",
+    scroll: "body",
+    start: "top 85%",
+    end: " bottom 15%",
+    scrub: 5,
+  },
+});
+
+gsap.from("#faq-section", {
+  opacity: 0,
+  duration: 2,
+  delay: 2,
+  y: 150,
+  stagger: 0.4,
+  scrollTrigger: {
+    trigger: "#faq-section", // .accordion
+    scroll: "body",
+    start: "top 90%",
+    end: " bottom 15%",
+    scrub: 5,
+  },
+});
+
+// gsap.from('.accordion, accordion-content, .accordion-item', {
+//   opacity: 0,
+//   duration: 2,
+//   delay: 2,
+//   y: 300,
+//   stagger:0.2,
+//   scrollTrigger: {
+//     trigger:".accordion, accordion-content, .accordion-item",
+//     scroll:"body",
+// 		start: "top 85%",
+// 		end: " bottom 15%",
+//     scrub:5,
+//   }
+// })
+
+// gsap.from("#price-section, .pricing-table", {
+//   opacity: 0,
+//   duration: 2,
+//   delay: 2,
+//   y: 200,
+//   stagger: 0.5,
+//   scrollTrigger: {
+//     trigger: "#price-section",
+//     scroll: "body",
+//     start: "top 85%",
+//     end: " bottom 15%",
+//     scrub: 5,
+//   },
+// });
+
+gsap.from("#customer-complaints, .complaint-btn, .Complaint-heading", {
+  opacity: 0,
+  duration: 1,
+  delay: 1,
+  y: 100,
+  stagger: 0.4,
+  scrollTrigger: {
+    trigger: "#customer-complaints, .complaint-btn, .Complaint-heading",
+    scroll: "body",
+    start: "top 85%",
+    end: " bottom 15%",
+    scrub: 5,
+  },
+});
+
+gsap.from(".footer-section, .footer", {
+  duration: 2,
+  delay: 3,
+  scale: 1,
+  y: 100,
+  overflow: "hidden",
+  opacity: 0,
+  stagger: 0.5,
+  scrollTrigger: {
+    trigger: ".footer-section, .footer",
+    scroll: "body",
+    start: "top 85%",
+    end: " bottom 15%",
+    scrub: 5,
+  },
+});
+
+// gsap.from('.navbar .nav_item', {opacity: 0, duration: 1, delay: 2.1, y:30, stagger: 0.2})
+
+// gsap.from('.title', {opacity: 0, duration: 1, delay: 1.6, y:30})
+// gsap.from('.description', {opacity: 0, duration: 1, delay: 1.8, y:30})
+// gsap.from('.btn', {opacity: 0, duration: 1, delay: 2.1, y:30})
+// gsap.from('.image', {opacity: 0, duration: 1, delay: 2.6, y:30})
