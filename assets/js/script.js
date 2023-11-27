@@ -414,7 +414,7 @@ gsap.from(".footer-section, .footer", {
     trigger: ".footer-section, .footer",
     scroll: "body",
     start: "top 85%",
-    end: " bottom 15%",
+    end: " bottom 15%",  
     scrub: 5,
   },
 });
