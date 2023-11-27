@@ -27,7 +27,7 @@ var setupModal = () => {
 
     btns.forEach(function (btn) {
       btn.onclick = function () {
-        modal.style.display = "block";        
+        modal.style.display = "block";
       };
     });
 
@@ -61,6 +61,21 @@ button1.addEventListener("click", setupModal);
 button2.addEventListener("click", setupModal);
 
 // city information
+
+document.addEventListener("DOMContentLoaded", function () {
+  const icons = document.querySelectorAll(".rotate-icon");
+  icons.forEach((icon) => {
+    icon.addEventListener("click", function () {
+      this.classList.toggle("rotated");
+
+      // Reset the rotation after a delay (e.g., 1 second)
+      setTimeout(() => {
+        this.classList.remove("rotated");
+      }, 1000);
+    });
+  });
+});
+
 function displayInfo(city) {
   var cityInfo = {
     LHR: {
@@ -242,13 +257,16 @@ gsap.from("#nav-logo, #nav-elements a", {
   stagger: 0.4,
 });
 
-gsap.from(".left h3, .left p, .left span, #booking-btn, #download-btn, .openModalBtn", {
-  y: 50,
-  duration: 1,
-  delay: 0.5,
-  opacity: 0,
-  stagger: 0.3,
-});
+gsap.from(
+  ".left h3, .left p, .left span, #booking-btn, #download-btn, .openModalBtn",
+  {
+    y: 50,
+    duration: 1,
+    delay: 0.5,
+    opacity: 0,
+    stagger: 0.3,
+  }
+);
 
 // gsap.from("#download-btn, .openModalBtn", {
 //   y: 50,
@@ -414,7 +432,7 @@ gsap.from(".footer-section, .footer", {
     trigger: ".footer-section, .footer",
     scroll: "body",
     start: "top 85%",
-    end: " bottom 15%",  
+    end: " bottom 15%",
     scrub: 5,
   },
 });

@@ -395,6 +395,27 @@ a {
   border-bottom: 1px solid #03b5d2;
 }
 
+.icon-list li i {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+  border: 2px solid #009879;
+  padding: 5px 0px 3px 6px;
+  border-radius: 50%;
+  width: 25px;
+}
+
+.rotate-icon {
+  transition: transform 0.3s ease-in-out;
+}
+
+.rotated {
+  transform: rotate(180deg);
+}
+
+
+
 th,
 td {
   border: 1px solid black;
