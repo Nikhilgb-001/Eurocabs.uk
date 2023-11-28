@@ -255,6 +255,7 @@ gsap.from("#nav-logo, #nav-elements a", {
   delay: 0.5,
   opacity: 0,
   stagger: 0.4,
+  scrub: 5,
 });
 
 gsap.from(
@@ -265,16 +266,9 @@ gsap.from(
     delay: 0.5,
     opacity: 0,
     stagger: 0.3,
+    scrub: 5,
   }
 );
-
-// gsap.from("#download-btn, .openModalBtn", {
-//   y: 50,
-//   duration: 1,
-//   delay: 1,
-//   opacity: 0,
-//   stagger: 0.5,
-// });
 
 gsap.from("#btn", {
   delay: 0.1,
@@ -287,6 +281,7 @@ gsap.from(".right img", {
   delay: 1,
   opacity: 0,
   stagger: 0.5,
+  scrub: 5,
 });
 
 // gsap.from(".site-name, .nav-item", {
@@ -314,14 +309,14 @@ gsap.from("#table-container", {
 });
 
 // Third section animation
-gsap.from(".service-item, #service-heading", {
+gsap.from("#services-section", {
   opacity: 0,
   duration: 2,
   delay: 2,
   y: 200,
   stagger: 0.5,
   scrollTrigger: {
-    trigger: ".service-item, #service-heading",
+    trigger: "#services-section",
     scroll: "body",
     start: "top 70%",
     end: " bottom 30%",
@@ -332,10 +327,10 @@ gsap.from(".service-item, #service-heading", {
 // about section
 gsap.from("#about-container, .para, #map", {
   opacity: 0,
-  duration: 2,
-  delay: 2,
+  duration: 1,
+  delay: 1,
   y: 200,
-  stagger: 0.4,
+  stagger: 0.5,
   scrollTrigger: {
     trigger: "#about-container",
     scroll: "body",
@@ -365,7 +360,7 @@ gsap.from("#faq-section", {
   duration: 2,
   delay: 2,
   y: 150,
-  stagger: 0.4,
+  stagger: 0.5,
   scrollTrigger: {
     trigger: "#faq-section", // .accordion
     scroll: "body",
@@ -410,7 +405,7 @@ gsap.from("#customer-complaints, .complaint-btn, .Complaint-heading", {
   duration: 1,
   delay: 1,
   y: 100,
-  stagger: 0.4,
+  stagger: 0.5,
   scrollTrigger: {
     trigger: "#customer-complaints, .complaint-btn, .Complaint-heading",
     scroll: "body",
