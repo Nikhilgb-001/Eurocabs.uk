@@ -293,11 +293,12 @@ gsap.from(".right img", {
 // });
 
 // second-section animation
-gsap.from("#table-container", {
+gsap.from(".icon-list li", {
   opacity: 0,
   duration: 2,
   delay: 2,
-  y: 200,
+  overflow:"hidden",
+  y: -200,
   stagger: 0.5,
   scrollTrigger: {
     trigger: "#table-container",
@@ -309,14 +310,14 @@ gsap.from("#table-container", {
 });
 
 // Third section animation
-gsap.from("#services-section", {
+gsap.from(".service-item", {
   opacity: 0,
   duration: 2,
-  delay: 2,
-  y: 200,
-  stagger: 0.5,
+  delay: 1,
+  y: 100,
+  // stagger: 0.5,
   scrollTrigger: {
-    trigger: "#services-section",
+    trigger: ".service-item",
     scroll: "body",
     start: "top 70%",
     end: " bottom 30%",
@@ -325,7 +326,7 @@ gsap.from("#services-section", {
 });
 
 // about section
-gsap.from("#about-container, .para, #map", {
+gsap.from(".para, #map", {
   opacity: 0,
   duration: 1,
   delay: 1,
@@ -355,14 +356,14 @@ gsap.from("#deals-section", {
   },
 });
 
-gsap.from("#faq-section", {
+gsap.from(".accordion-item", {
   opacity: 0,
   duration: 2,
   delay: 2,
   y: 150,
   stagger: 0.5,
   scrollTrigger: {
-    trigger: "#faq-section", // .accordion
+    trigger: ".accordion-item", // .accordion
     scroll: "body",
     start: "top 90%",
     end: " bottom 15%",

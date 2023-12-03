@@ -188,12 +188,12 @@ a {
   color: #fede00;
 }
 .navbar-nav-responsive {
-  /* margin: 4rem 0; */
+  margin: 4rem 0;
   list-style: none;
 }
 .nav-item-responsive {
   margin: 1.4rem 0;
-  line-height: 33px;
+  line-height: 40px;
 }
 .nav-link-responsive {
   color: #fff;
@@ -432,7 +432,7 @@ th {
   padding: 14px;
   border-radius: 14px;
   margin: auto;
-  width: 10%;
+  width: 20%;
   font-weight: 600;
   margin-top: 15px;
   text-decoration: none;
@@ -818,6 +818,7 @@ th {
 
 .footer-section {
   padding: 0 20px;
+  margin: 12px;
 }
 
 .footer-section h4 {

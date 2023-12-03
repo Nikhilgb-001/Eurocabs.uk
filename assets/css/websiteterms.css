@@ -162,24 +162,16 @@ a {
   padding: 2vw 4vw;
 }
 
-/* Second section */
-.content {
-  min-height: 100%;
-  min-width: 100%;
-  margin-top: 95px;
+/* business-cards-container css */
+#business-cards-container {
+  padding-top: 50px;
 }
 
-.content h1 {
+#business-cards-container h1 {
   text-align: center;
-  padding: 23px;
 }
 
-video {
-  height: auto;
-  width: 100%;
-}
-
-.services-grid {
+.business-card-container {
   display: flex;
   justify-content: center;
   gap: 20px;
@@ -190,63 +182,36 @@ video {
   margin-top: 30px;
 }
 
-.service-item {
+.content {
   background-color: #ffffff;
-  border-radius: 5px;
-  padding: 20px;
-  width: 40%;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 24px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
   margin-bottom: 10px;
 }
 
-.service-item button {
-  padding: 12px;
-  display: block;
+.hyper-link {
   font-weight: 600;
-  border: 0;
-  outline: none;
-  background-color: #000000;
-  box-shadow: 0 0 11px rgba(33, 33, 33, 0.5);
-  color: #fff;
-  border-radius: 5px;
-  margin: auto;
+  color: #fede00;
 }
 
-.service-item button:hover {
-  box-shadow: 0 0 11px rgba(33, 33, 33, 0.5);
-  cursor: pointer;
-  color: #000;
-  background: #F7B928;
-  transition: all 1s ease;
-}
-
-.service-item:hover {
-  box-shadow: 0 0 11px rgba(33, 33, 33, 0.5);
-  cursor: pointer;
-  color: #000;
-  transition: all 1s ease;
-}
-
-.service-item img {
-  max-width: 20%;
-  border-radius: 50%;
-  display: block;
-  margin: auto;
-  mix-blend-mode: multiply;
-  margin-top: 20px;
-}
-
-.service-item h3 {
-  font-size: 20px;
-  text-align: center;
-}
-
-.service-item p {
-  font-size: 16px;
-  font-weight: 400;
-  text-align: center;
-  padding: 12px;
+.content li {
+  padding: 6px;
   line-height: 30px;
+}
+
+.content p {
+  font-size: 15px;
+  font-weight: 500;
+  text-align: justify;
+  padding: 12px;
+  line-height: 35px;
+}
+
+.content h2 {
+  font-size: 20px;
 }
 
 /* footer css */
@@ -337,18 +302,26 @@ video {
     margin: 4rem 0rem;
   }
 
-  .services-grid {
-    /* padding: 12px;
-    grid-template-columns: 1fr;
-    width: auto; */
-    flex-direction: column;
-  }
-
-  .service-item {
+  .content {
     width: 90%;
+    gap: 8px;
   }
 
-  .service-item p {
-    padding: 9px;
+  .content p {
+    width: 100%;
+    font-size: 12px;
+    line-height: 30px;
+    text-align: start;
+  }
+  .content li {
+    font-size: 12px;
+  }
+  .content h2 {
+    font-size: 18px;
+  }
+
+  #business-cards-container h1 {
+    text-align: center;
+    margin-top: 12px;
   }
 }

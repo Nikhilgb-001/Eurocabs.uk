@@ -44,9 +44,9 @@
           </span>
           <ul class="navbar-nav-responsive">
             <li class="nav-item-responsive">
-              <a href="http://eb3.autocab.net/#/36364" class="nav-link-responsive">Book A Taxi</a>
+              <a href="http://eb3.autocab.net/#/36364" class="nav-link-responsive">Book A Cab</a>
             </li>
-            <li class="nav-item-responsive">
+            <!--<li class="nav-item-responsive">
               <a href="setupModal()" class="nav-link-responsive" onclick="setupModal()" id="openModalBtn-nav">Driver
                 Login</a>
             </li>
@@ -58,7 +58,7 @@
             </li>
             <li class="nav-item-responsive">
               <a href="#" class="nav-link-responsive">FAQs</a>
-            </li>
+            </li>-->
             <li class="nav-item-responsive">
               <a href="#table-container" class="nav-link-responsive">Airport Rates</a>
             </li>
@@ -66,18 +66,27 @@
               <a href="#services-section" class="nav-link-responsive">Our Services</a>
             </li>
             <li class="nav-item-responsive">
-              <a href="#" class="nav-link-responsive">Safety</a>
+              <a href="#faq-section" class="nav-link-responsive">FAQs</a>
             </li>
             <li class="nav-item-responsive">
-              <a href=".customer-complaints" class="nav-link-responsive">Help</a>
+              <a href="#customer-complaints" class="nav-link-responsive">Complaint Section</a>
+            </li>
+            <li class="nav-item-responsive">
+              <a href="https://apps.apple.com/gb/app/eurocabs/id1450809935" class="nav-link-responsive">Our App</a>
+            </li>
+            <!-- <li class="nav-item">
+                        <a href="https://apps.apple.com/gb/app/eurocabs/id1450809935" class="nav-link">Our App</a>
+                    </li>-->
+            <li class="nav-item-responsive">
+              <a href="#about-container" class="nav-link-responsive">About us</a>
             </li>
           </ul>
 
           <div class="nav-social-icon">
-            <a href="#"><i class="fab fa-facebook"></i><span></span></a>
-            <a href="#"><i class="fab fa-twitter"></i><span></span></a>
-            <a href="#"><i class="fab fa-linkedin"></i><span></span></a>
-            <a href="#"><i class="fab fa-instagram"></i><span></span></a>
+            <a href="https://www.facebook.com/eurocabs/"><i class="fab fa-facebook"></i><span></span></a>
+            <a href="https://twitter.com/euro_cabs"><i class="fab fa-twitter"></i><span></span></a>
+            <a href="https://www.linkedin.com/company/eurocabs/"><i class="fab fa-linkedin"></i><span></span></a>
+            <!--<a href="#"><i class="fab fa-instagram"></i><span></span></a>-->
           </div>
         </div>
       </nav>
@@ -119,7 +128,7 @@
 
   <div id="table-container">
     <h1 class="heading">airport transfer rates</h1> <br>
-    <h2>Click on a city code to display information:</h2>
+    <h2>Click on the city to display Airport Transfer Rates</h2>
     <ul class="icon-list">
       <li><a onclick="displayInfo('LHR')">LHR - London Heathrow <i class="fas fa-angle-down rotate-icon"></i></a></li>
       <li><a onclick="displayInfo('LTN')">LTN - Luton <i class="fas fa-angle-down rotate-icon"></i></a></li>
@@ -143,27 +152,27 @@
         <h3>Rides</h3>
         <p>Request in seconds ride until you are satisfied with an affordable cost .</p>
       </div>
+       <div class="service-item" onclick="window.open('./corporate.html', '_self')">
+        <img src="assets/images/business.jpg" alt="Service 3">
+        <h3>Business</h3>
+        <p>Manage business travel for your team and clients with Euro cabs with an budget friendly package.</p>
+      </div>
       <div class="service-item" onclick="location.href = ('#table-container', '_self')">
         <img src="assets/images/airport.png" alt="Service 2">
         <h3>Airports</h3>
         <p>We provide cab serivices in the areas of luton in an affordable cost.</p>
       </div>
-      <div class="service-item" onclick="window.open('./corporate.html', '_self')">
-        <img src="assets/images/business.jpg" alt="Service 3">
-        <h3>Business</h3>
-        <p>Manage business travel for your team and clients with Euro cabs with an budget friendly package.</p>
-      </div>
-      <div class="service-item">
+      <div class="service-item" onclick="window.open('https://eb3.autocab.net/#/36364', '_self')" target="blank">
         <img src="assets/images/selfdrive.png" alt="Service 4">
         <h3>Drive</h3>
         <p>Drive Seimlessly With Euor cabs at a affordable rates.</p>
       </div>
-      <div class="service-item">
+      <div class="service-item" onclick="window.open('https://eb3.autocab.net/#/36364', '_self')" target="blank">
         <img src="assets/images/franchise.png" alt="Service 5">
         <h3>School Transport</h3>
         <p>We also provide Franchise Services For your cities .</p>
       </div>
-      <div class="service-item">
+      <div class="service-item" onclick="window.open('https://eb3.autocab.net/#/36364', '_self')" target="blank">
         <img src="assets/images/sens.png" alt="Service 6">
         <h3>SENS Transport</h3>
         <p>we also provide who are deemed eligible for transport.</p>
@@ -346,7 +355,6 @@
       <div class="footer-section">
         <h4>About</h4>
         <ul>
-          <li><a href="#">About</a></li>
           <li><a href="#">Accounts</a></li>
           <li><a href="#">FAQs</a></li>
           <li><a href="#">Airports</a></li>
@@ -358,35 +366,34 @@
       <div class="footer-section">
         <h4>Services</h4>
         <ul>
-          <li><a href="#">Letchworth Taxi</a></li>
-          <li><a href="#">Hitchin Taxi</a></li>
-          <li><a href="#">Baldock Taxi</a></li>
-          <li><a href="#">Fairfield Park Taxi</a></li>
-          <li><a href="#">Arlesey Taxi</a></li>
-          <li><a href="#">Stotfold Taxi</a></li>
+          <li><a href="https://eb3.autocab.net/#/36364">Rides</a></li>
+          <li><a href="https://eb3.autocab.net/#/36364">Airports</a></li>
+          <li><a href="https://eb3.autocab.net/#/36364">Business</a></li>
+          <li><a href="https://eb3.autocab.net/#/36364">Drive</a></li>
+          <li><a href="https://eb3.autocab.net/#/36364">School Transport</a></li>
+          <li><a href="https://eb3.autocab.net/#/36364">SENS Transport</a></li>
         </ul>
       </div>
       <div class="footer-section">
         <h4>Legal</h4>
         <ul>
-          <li><a href="#">Business Terms & Conditions</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Website Terms of Use</a></li>
+          <li><a href="BusinessT&C.html">Business Terms & Conditions</a></li>
+          <li><a href="privacy&policy.html">Privacy Policy</a></li>
+          <li><a href="websiteTerms.html">Website Terms of Use</a></li>
         </ul>
       </div>
       <div class="footer-section">
         <h4>Follow us on</h4>
         <ul class="social-icons">
-          <a href="#"><i class="fab fa-facebook"></i><span></span></a>
-          <a href="#"><i class="fab fa-twitter"></i><span></span></a>
-          <a href="#"><i class="fab fa-linkedin"></i><span></span></a>
-          <a href="#"><i class="fab fa-instagram"></i><span></span></a>
+            <a href="https://www.facebook.com/eurocabs/"><i class="fab fa-facebook"></i><span></span></a>
+            <a href="https://twitter.com/euro_cabs"><i class="fab fa-twitter"></i><span></span></a>
+            <a href="https://www.linkedin.com/company/eurocabs/"><i class="fab fa-linkedin"></i><span></span></a>
+            <!--<a href="#"><i class="fab fa-instagram"></i><span></span></a>-->
         </ul>
       </div>
     </div>
     <div class="copyright">
-      <p>&copy; Eurocabs.uk 2023 All rights Reserved | Designed by <a
-          href="https://www.linkedin.com/in/nikhil-gb-37669b205/">Nikhil</a></p>
+       <p>&copy; Eurocabs.uk 2023 All rights Reserved</p>
     </div>
 
     <!-- GSAP -->

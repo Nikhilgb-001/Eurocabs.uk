@@ -28,8 +28,10 @@ a {
 /* ==== Navbar ==== */
 .navbar {
   background-color: #ffffff;
-  position: fixed;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   color: #fff;
+  position: fixed;
   top: 0;
   right: 0;
   z-index: 999;
@@ -38,8 +40,6 @@ a {
   align-items: center;
   justify-content: space-between;
   height: 80px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
-    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 .btn-bars {
@@ -65,13 +65,23 @@ a {
   color: #fff;
 }
 .navbar-collapse {
-  position: fixed;
+  /* position: fixed;
   top: 0;
   right: 0;
   height: 100vh;
   background-color: #000000;
   width: 240px;
   padding: 1.9rem;
+  transform: translateX(100%);
+  transition: all 0.5s ease; */
+
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  background-color: #000000;
+  width: 240px;
+  padding: 1.6rem;
   transform: translateX(100%);
   transition: all 0.5s ease;
 }
@@ -99,33 +109,27 @@ a {
 }
 .nav-item {
   margin: 1.4rem 0;
+  line-height: 40px;
 }
 .nav-link {
   color: #fff;
   font-size: 1.3rem;
   transition: color 0.5s ease;
-  line-height: 40px;
   margin-top: 30px;
 }
 .nav-link:hover {
   color: #fede00;
 }
-.nav-para {
-  line-height: 1.6;
-  font-size: 0.9rem;
-  opacity: 0.7;
-  font-weight: 300;
-}
+
 .nav-social-icon {
-  cursor: pointer;
   margin-top: 3rem;
+  margin-right: 4rem;
   display: flex;
   justify-content: space-between;
-  margin: auto;
 }
 .nav-social-icon a i {
   color: white;
-  font-size: 19px;
+  /* font-size: 16px; */
 }
 
 .nav-social-icon a:nth-child(1):hover i {
@@ -247,7 +251,7 @@ a {
 .faq-container {
   max-width: 800px;
   margin: 0 auto;
-  padding:3vw ;
+  padding: 3vw;
 }
 
 .faq-item {
@@ -500,6 +504,7 @@ input[type="submit"]:hover {
 
 .footer-section {
   padding: 0 20px;
+  margin: 12px;
 }
 
 .footer-section h4 {
@@ -573,7 +578,7 @@ input[type="submit"]:hover {
     width: 100%;
   }
   .navbar-nav {
-    margin: 2rem 0;
+    margin: 4rem 0rem;
   }
 
   .services-grid {
