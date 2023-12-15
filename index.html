@@ -31,7 +31,7 @@
         <!-- <a href="">Airport rates</a> -->
         <a href="https://apps.apple.com/gb/app/eurocabs/id1450809935" id="download">Download Our
           App</a>
-        <a href="#" id="openModalBtn-1" class="register openModalBtn" onclick="setupModal()">Register As a Driver</a>
+        <a href="DriverLogin.html" id="openModalBtn-1" class="register openModalBtn">Register As a Driver</a>
       </div>
 
       <!-- responsive navbar -->
@@ -102,14 +102,14 @@
         <div class="header-links">
           <a href="http://eb3.autocab.net/#/36364" id="booking-btn">Book A Cab</a>
           <a href="http://onelink.to/5yqht7" id="download-btn">Download Our App</a>
-          <a id="openModalBtn-responsive" onclick="setupModal()" class="openModalBtn">Register As a Driver</a>
+          <a href="DriverLogin.html" id="openModalBtn-responsive" class="openModalBtn">Register As a Driver</a>
           <!-- https://forms.office.com/r/m1CS32hq9E -->
           <div id="myModal" class="modal">
             <div class="modal-content">
               <span class="close-btn">&times;</span>
               <p style="color: #000000;">Select area</p>
               <ul id="cityList">
-                <li data-link="https://www.example.com/city1">North Hertfordshire</li>
+                <!-- <li data-link="https://www.example.com/city1">North Hertfordshire</li> -->
                 <!-- <li data-link="https://www.example.com/city2">Luton</li>
                 <li data-link="https://www.example.com/city3">Heathrow</li>
                 <li data-link="https://www.example.com/city4">Gatwick</li> -->
@@ -127,22 +127,25 @@
   &nbsp;
 
   <div id="table-container">
-    <h1 class="heading">airport transfer rates</h1> <br>
-    <h2>Click on the city to display Airport Transfer Rates</h2>
-    <ul class="icon-list">
-      <li><a onclick="displayInfo('LHR')">LHR - London Heathrow <i class="fas fa-angle-down rotate-icon"></i></a></li>
-      <li><a onclick="displayInfo('LTN')">LTN - Luton <i class="fas fa-angle-down rotate-icon"></i></a></li>
-      <li><a onclick="displayInfo('LGW')">LGW - Gatwick <i class="fas fa-angle-down rotate-icon"></i></a></li>
-      <li><a onclick="displayInfo('STD')">STD - Stansted <i class="fas fa-angle-down rotate-icon"></i></a></li>
-      <li><a onclick="displayInfo('LCY')">LCY - London City Airport <i class="fas fa-angle-down rotate-icon"></i></a>
-      </li>
-    </ul>
+    <h1 class="heading">airport transfer rates</h1>
+    
+    <form action="#" class="location" method="post">
+      <h3>Enter Your Source And Destination </h3>
+      <div class="input-field">
+        <i class="fas fa-map-marker-alt"></i>
+        <label for="from" class="airport">From</label>
+        <input type="text" id="from" name="from" placeholder="Enter your location">
+      </div>
 
-    <div id="cityInfo"></div>
-    <a href="https://eb3.autocab.net/#/36364" class="airport-booking">Book A Cab</a>
+      <div class="input-field">
+        <i class="fas fa-taxi"></i>
+        <label for="where" class="airport">Where</label>
+        <input type="text" id="where" name="where" placeholder="Enter destination">
+      </div>
+      <button type="submit" class="airport-booking">Submit</button>
+    </form>
+
   </div>
-
-  &nbsp;
 
   <div id="services-section">
     <h1 class="heading" id="service-heading">Our Services</h1>
@@ -152,7 +155,7 @@
         <h3>Rides</h3>
         <p>Request in seconds ride until you are satisfied with an affordable cost .</p>
       </div>
-       <div class="service-item" onclick="window.open('./corporate.html', '_self')">
+      <div class="service-item" onclick="window.open('./corporate.html', '_self')">
         <img src="assets/images/business.jpg" alt="Service 3">
         <h3>Business</h3>
         <p>Manage business travel for your team and clients with Euro cabs with an budget friendly package.</p>
@@ -340,11 +343,50 @@
   &nbsp;
 
   <div class="customer-complaints" id="customer-complaints">
-    <h1 class="heading Complaint-heading">Complaints Section</h1>
-    <h2 class="Complaint-heading">Please send us the the complaints our team will get back to you with in 24 hrs</h2>
-    <div class="complaint-btn">
-      <a href="https://forms.office.com/e/dkSCrzMfZz" id="complaint-btn">Help Me!</a>
-    </div>
+    <h1 class="heading Complaint-heading">Complaints Form </h1>
+    <form action="#" method="post" class="complaints-form">
+      <div class="form-group">
+        <label for="userName">Name</label>
+        <input required type="text" id="userName" placeholder="Name" name="userName">
+      </div>
+      <div class="form-group">
+        <label for="dateOfJourney">Date Of Journey</label>
+        <input required type="date" id="dateOfJourney" name="dateOfJourney">
+      </div>
+      <div class="form-group">
+        <label for="phoneNumber">Phone Number Used For Booking</label>
+        <input required type="text" id="phoneNumber" placeholder="Phone Number" name="phoneNumber">
+      </div>
+      <div class="form-group">
+        <label for="pickUpAddress">Enter The PickUp Address</label>
+        <textarea required id="pickUpAddress" placeholder="Enter The PickUp Address" name="pickUpAddress"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="dropAddress">Enter The Drop Address</label>
+        <textarea required id="dropAddress" placeholder="Enter The Drop Address" name="dropAddress"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="complaintRegarding">What was the Complaint Regarding</label>
+        <select required id="complaintRegarding" onchange="showOther()" name="complaintRegarding">
+          <option value="price Query">Price Query</option>
+          <option value="driver Etiquette">Driver Etiquette</option>
+          <option value="bad Customer Service">Bad Customer Service</option>
+          <option value="car Cleanliness">Car Cleanliness</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="form-group" id="com" style="display: none;">
+        <label for="other">Describe Other</label>
+        <textarea id="other" placeholder="Describe Other" name="other"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="description">Further Description on the Complaint</label>
+        <textarea required id="description" placeholder="Further Description" name="description"></textarea>
+      </div>
+      <div class="form-group">
+        <button type="submit" class="complaint-btn">Submit</button>
+      </div>
+    </form>
   </div>
 
   &nbsp;
@@ -385,15 +427,15 @@
       <div class="footer-section">
         <h4>Follow us on</h4>
         <ul class="social-icons">
-            <a href="https://www.facebook.com/eurocabs/"><i class="fab fa-facebook"></i><span></span></a>
-            <a href="https://twitter.com/euro_cabs"><i class="fab fa-twitter"></i><span></span></a>
-            <a href="https://www.linkedin.com/company/eurocabs/"><i class="fab fa-linkedin"></i><span></span></a>
-            <!--<a href="#"><i class="fab fa-instagram"></i><span></span></a>-->
+          <a href="https://www.facebook.com/eurocabs/"><i class="fab fa-facebook"></i><span></span></a>
+          <a href="https://twitter.com/euro_cabs"><i class="fab fa-twitter"></i><span></span></a>
+          <a href="https://www.linkedin.com/company/eurocabs/"><i class="fab fa-linkedin"></i><span></span></a>
+          <!--<a href="#"><i class="fab fa-instagram"></i><span></span></a>-->
         </ul>
       </div>
     </div>
     <div class="copyright">
-       <p>&copy; Eurocabs.uk 2023 All rights Reserved</p>
+      <p>&copy; Eurocabs.uk 2023 All rights Reserved</p>
     </div>
 
     <!-- GSAP -->

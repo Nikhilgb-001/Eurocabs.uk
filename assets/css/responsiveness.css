@@ -112,9 +112,8 @@
     padding: 10px;
   } */
 
-  #table-container ul {
-    border: 3px solid #009879;
-    width: 60%;
+  #table-container {
+    width: 20%;
     padding: 2vw;
     margin: 20px auto;
   }
@@ -200,7 +199,7 @@
     line-height: 45px;
   }
 
-  .right-download-img{
+  .right-download-img {
     width: 100%;
     text-align: center;
   }
@@ -243,7 +242,6 @@
   .social-media {
     padding: 1.5rem 0 0 0;
   }
-
 }
 
 @media (max-width: 600px) {
@@ -390,6 +388,17 @@
 
   .airport-booking {
     width: 50%;
+    margin-top: 22px;
+  }
+
+  .location h3 {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .input-field i {
+    padding: 8px 4px 2px 2px;
+    /* margin-top: 3px; */
   }
 
   .para {
@@ -419,7 +428,7 @@
 
   /* faq section */
   .container {
-    width: 95%;
+    width: 90%;
     padding: 2rem;
   }
 
@@ -454,22 +463,6 @@
     font-weight: 500;
   }
 
-  /* Download section */
-
-  #download-container {
-    min-height: 75vh;
-    padding: 0vw 0vw 8vw 0vw;
-  }
-
-  #download-section {
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-    height: 65vh;
-    /* padding: 2vw 0vw 6vw 0vw; */
-    padding: 0vw 3vw 7vw 3vw;
-  }
-
   .left-text {
     width: 100%;
   }
@@ -479,65 +472,18 @@
     font-size: 25px;
     line-height: 40px;
   }
-  
+
   .left-text h2 {
     font-size: 20px;
     line-height: 38px;
     font-weight: 600;
-    
   }
 
-  .right-download-img {
-    text-align: center;
-    padding-bottom: 12px;
-  }
+  /* complaints-form */
 
-  /* contact css */
-  /* .form-container {
-    padding: 1.5rem;
+  .complaints-form {
+    width: 100%;
   }
-
-  .contact-info:before {
-    display: none;
-  }
-
-  .square,
-  .big-circle {
-    display: none;
-  }
-
-  form,
-  .contact-info {
-    padding: 1.7rem 1.6rem;
-  }
-
-  .text,
-  .information,
-  .social-media p {
-    font-size: 0.8rem;
-  }
-
-  .title {
-    font-size: 1.15rem;
-  }
-
-  .social-icons a {
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-  }
-
-  .icon {
-    width: 23px;
-  }
-
-  .input {
-    padding: 0.45rem 1.2rem;
-  }
-
-  .btn {
-    padding: 0.45rem 1.2rem;
-  } */
 
   .customer-complaints h2 {
     font-size: 14px;
@@ -545,10 +491,43 @@
     text-align: center;
   }
 
+  label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 12px;
+    float: left;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+  input[type="text"],
+  input[type="date"],
+  textarea,
+  select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  select {
+    width: 100%;
+  }
+  textarea {
+    width: 100%;
+    resize: vertical;
+  }
+
   .complaint-btn {
-    border-radius: 30px;
-    border: 2px solid #f7b928;
-    width: 35%;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-weight: 600;
+    background: #000000;
+    color: #ffffff;
+    width: 50%;
     margin: 20px;
     padding: 3vw;
   }

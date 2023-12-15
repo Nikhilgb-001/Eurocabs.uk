@@ -38,12 +38,13 @@ body {
   z-index: 99;
   border: none;
   outline: none;
-  background-color: #fede00;
+  background-color: rgb(254, 222, 0);
   color: white;
   cursor: pointer;
-  padding: 15px;
+  padding: 6px;
   border-radius: 50px;
   font-size: 18px;
+  width: 35px;
 }
 
 #myBtn:hover {
@@ -443,71 +444,35 @@ a {
   -ms-flex-pack: distribute;
   justify-content: space-around;
   padding: 3vw 2vw;
-}
-
-#table-container ul {
-  border: 3px solid #009879;
-  width: 60%;
-  padding: 2vw;
+  width: 50%;
   margin: 20px auto;
 }
 
-#table-container li a {
-  color: #000000;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  cursor: pointer;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  padding: 12px;
+.location {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 24px;
+  margin: 21px;
 }
 
-#table-container li {
-  list-style: none;
-  border-bottom: 1px solid #03b5d2;
+.location h3 {
+  padding: 14px;
 }
 
-.icon-list li i {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+.airport {
   margin-bottom: 5px;
-  border: 2px solid #009879;
-  padding: 5px 0px 3px 6px;
-  border-radius: 50%;
-  width: 25px;
+  font-weight: bold;
+  float: left;
+  padding: 11px;
 }
 
-.rotate-icon {
-  -webkit-transition: -webkit-transform 0.3s ease-in-out;
-  transition: -webkit-transform 0.3s ease-in-out;
-  -o-transition: transform 0.3s ease-in-out;
-  transition: transform 0.3s ease-in-out;
-  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+.input-field {
+  position: relative;
+  width: 100%;
+  margin-bottom: 15px;
 }
-
-.rotated {
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg);
-}
-
-th,
-td {
-  border: 1px solid black;
-  padding: 8px;
-  text-align: left;
-}
-th {
-  background-color: #f2f2f2;
+.input-field i {
+  padding: 10px 4px 2px 2px;
+  margin-top: 3px;
 }
 
 .airport-booking {
@@ -518,9 +483,10 @@ th {
   -ms-flex-pack: center;
   justify-content: center;
   padding: 14px;
-  border-radius: 14px;
+  border-radius: 12px;
+  border: none;
   margin: auto;
-  width: 20%;
+  width: 50%;
   font-weight: 600;
   margin-top: 15px;
   text-decoration: none;
@@ -859,13 +825,42 @@ th {
 }
 
 /* contact css */
-/* .complaints-section {
-  min-width: 80%;
-  min-height: 80%;
-  position: relative;
-  display: grid;
-  place-items: center;
-} */
+.complaints-form {
+  width: 70%;
+  margin: 20px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  float: left;
+  padding: 11px;
+}
+input[type="text"],
+input[type="date"],
+textarea,
+select {
+  width: calc(100% - 22px); /* Adjusting for padding and border */
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+select {
+  width: 100%;
+}
+textarea {
+  width: calc(100% - 14px); /* Adjusting for padding and border */
+  resize: vertical;
+}
 
 .customer-complaints {
   display: -webkit-box;
@@ -881,9 +876,8 @@ th {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  margin: 20px;
-  min-height: 40vh;
-  padding: 6vw;
+  min-height: 60vh;
+  padding: 7vw;
   text-align: center;
 }
 
@@ -897,20 +891,18 @@ th {
 }
 
 .complaint-btn {
-  border-radius: 30px;
-  border: 2px solid #f7b928;
-  width: 15%;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-weight: 600;
+  background: #000000;
+  color: #ffffff;
+  width: 25%;
   margin: 20px;
   padding: 1vw;
 }
 
-.complaint-btn a {
-  color: #000000;
-  text-align: center;
-  font-weight: 900;
-}
-
-.complaint-btn:hover a {
+.complaint-btn:hover {
   -webkit-transition: all 1s ease;
   -o-transition: all 1s ease;
   transition: all 1s ease;
@@ -925,9 +917,6 @@ th {
   color: #fff;
   cursor: pointer;
 }
-
-/* .form-container {
-  
 
 /* footer css */
 

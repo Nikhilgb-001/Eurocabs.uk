@@ -18,63 +18,63 @@ navMenu.addEventListener("click", (event) => {
 
 // modal code
 
-var setupModal = () => {
-  document.addEventListener("DOMContentLoaded", function () {
-    var modal = document.getElementById("myModal");
-    var btns = document.querySelectorAll(".openModalBtn"); // Select multiple buttons
+// var setupModal = () => {
+//   document.addEventListener("DOMContentLoaded", function () {
+//     var modal = document.getElementById("myModal");
+//     var btns = document.querySelectorAll(".openModalBtn"); // Select multiple buttons
 
-    var span = document.getElementsByClassName("close-btn")[0];
+//     var span = document.getElementsByClassName("close-btn")[0];
 
-    btns.forEach(function (btn) {
-      btn.onclick = function () {
-        modal.style.display = "block";
-      };
-    });
+//     btns.forEach(function (btn) {
+//       btn.onclick = function () {
+//         modal.style.display = "block";
+//       };
+//     });
 
-    span.onclick = function () {
-      modal.style.display = "none";
-    };
+//     span.onclick = function () {
+//       modal.style.display = "none";
+//     };
 
-    window.onclick = function (event) {
-      if (event.target == modal) {
-        modal.style.display = "none";
-      }
-    };
+//     window.onclick = function (event) {
+//       if (event.target == modal) {
+//         modal.style.display = "none";
+//       }
+//     };
 
-    var cityItems = document.querySelectorAll("#cityList li");
-    cityItems.forEach(function (item) {
-      item.addEventListener("click", function () {
-        var link = item.getAttribute("data-link");
-        window.location.href = link;
-      });
-    });
-  });
-};
+//     var cityItems = document.querySelectorAll("#cityList li");
+//     cityItems.forEach(function (item) {
+//       item.addEventListener("click", function () {
+//         var link = item.getAttribute("data-link");
+//         window.location.href = link;
+//       });
+//     });
+//   });
+// };
 
-setupModal();
+// setupModal();
 
-var button1 = document.getElementById("openModalBtn-1");
-var button2 = document.getElementById("openModalBtn-responsive");
-var button3 = document.getElementById("openModalBtn-nav");
+// var button1 = document.getElementById("openModalBtn-1");
+// var button2 = document.getElementById("openModalBtn-responsive");
+// var button3 = document.getElementById("openModalBtn-nav");
 
-button1.addEventListener("click", setupModal);
-button2.addEventListener("click", setupModal);
+// button1.addEventListener("click", setupModal);
+// button2.addEventListener("click", setupModal);
 
 // city information
 
-document.addEventListener("DOMContentLoaded", function () {
-  const icons = document.querySelectorAll(".rotate-icon");
-  icons.forEach((icon) => {
-    icon.addEventListener("click", function () {
-      this.classList.toggle("rotated");
+// document.addEventListener("DOMContentLoaded", function () {
+//   const icons = document.querySelectorAll(".rotate-icon");
+//   icons.forEach((icon) => {
+//     icon.addEventListener("click", function () {
+//       this.classList.toggle("rotated");
 
-      // Reset the rotation after a delay (e.g., 1 second)
-      setTimeout(() => {
-        this.classList.remove("rotated");
-      }, 1000);
-    });
-  });
-});
+//       // Reset the rotation after a delay (e.g., 1 second)
+//       setTimeout(() => {
+//         this.classList.remove("rotated");
+//       }, 1000);
+//     });
+//   });
+// });
 
 function displayInfo(city) {
   var cityInfo = {
@@ -189,6 +189,19 @@ function displayInfo(city) {
   popup.document.close();
 }
 
+// form js
+
+function showOther() {
+  var select = document.getElementById("complaintRegarding");
+  var otherDiv = document.getElementById("com");
+
+  if (select.value === "other") {
+    otherDiv.style.display = "block";
+  } else {
+    otherDiv.style.display = "none";
+  }
+}
+
 // faq section
 const items = document.querySelectorAll(".accordion button");
 
@@ -293,12 +306,12 @@ gsap.from(".right img", {
 // });
 
 // second-section animation
-gsap.from(".icon-list li", {
+gsap.from(".input-field, .airport-booking",  {
   opacity: 0,
   duration: 2,
   delay: 2,
-  overflow:"hidden",
-  y: -200,
+  overflow: "hidden",
+  y: 150,
   stagger: 0.5,
   scrollTrigger: {
     trigger: "#table-container",
@@ -401,14 +414,14 @@ gsap.from(".accordion-item", {
 //   },
 // });
 
-gsap.from("#customer-complaints, .complaint-btn, .Complaint-heading", {
+gsap.from(".complaints-form, .form-group, .Complaint-heading", {
   opacity: 0,
   duration: 1,
-  delay: 1,
+  delay: 2,
   y: 100,
-  stagger: 0.5,
+  stagger: 0.3,
   scrollTrigger: {
-    trigger: "#customer-complaints, .complaint-btn, .Complaint-heading",
+    trigger: ".complaints-form, .form-group, .Complaint-heading",
     scroll: "body",
     start: "top 85%",
     end: " bottom 15%",
