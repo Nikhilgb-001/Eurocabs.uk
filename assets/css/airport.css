@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Montserrat:wght@200;300;400;700;800&family=Roboto:wght@300;400&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Roboto:wght@300;400&family=Rubik+Doodle+Shadow&family=Rubik+Lines&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -172,82 +172,12 @@ a {
 .content h1 {
   text-align: center;
   padding: 4vw 2vw 0vw 0vw;
+  font-family: "Rubik Doodle Shadow", sans-serif;
+  color: #001220;
+  letter-spacing: 6px;
 }
 
-video {
-  height: auto;
-  width: 100%;
-}
 
-.services-grid {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-  width: 90%;
-  margin: auto;
-  padding: 4vw;
-  margin-top: 30px;
-}
-
-.service-item {
-  background-color: #ffffff;
-  border-radius: 5px;
-  padding: 20px;
-  width: 40%;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  margin-bottom: 10px;
-}
-
-.service-item button {
-  padding: 12px;
-  display: block;
-  font-weight: 600;
-  border: 0;
-  outline: none;
-  background-color: #000000;
-  box-shadow: 0 0 11px rgba(33, 33, 33, 0.5);
-  color: #fff;
-  border-radius: 5px;
-  margin: auto;
-}
-
-.service-item button:hover {
-  box-shadow: 0 0 11px rgba(33, 33, 33, 0.5);
-  cursor: pointer;
-  color: #000;
-  background: #F7B928;
-  transition: all 1s ease;
-}
-
-.service-item:hover {
-  box-shadow: 0 0 11px rgba(33, 33, 33, 0.5);
-  cursor: pointer;
-  color: #000;
-  transition: all 1s ease;
-}
-
-.service-item img {
-  max-width: 20%;
-  border-radius: 50%;
-  display: block;
-  margin: auto;
-  mix-blend-mode: multiply;
-  margin-top: 20px;
-}
-
-.service-item h3 {
-  font-size: 20px;
-  text-align: center;
-}
-
-.service-item p {
-  font-size: 16px;
-  font-weight: 400;
-  text-align: center;
-  padding: 12px;
-  line-height: 30px;
-}
 
 /* footer css */
 
@@ -323,32 +253,23 @@ video {
   color: #777;
 }
 
+
 @media screen and (max-width: 600px) {
-  .site-name {
-    font-size: 1.8rem;
-  }
-  .btn-bars {
-    padding: 0 0.5rem;
-  }
-  .navbar-close {
-    width: 100%;
-  }
-  .navbar-nav {
-    margin: 4rem 0rem;
-  }
-
-  .services-grid {
-    /* padding: 12px;
-    grid-template-columns: 1fr;
-    width: auto; */
-    flex-direction: column;
-  }
-
-  .service-item {
-    width: 90%;
-  }
-
-  .service-item p {
-    padding: 9px;
-  }
+    .site-name {
+      font-size: 1.8rem;
+    }
+    .btn-bars {
+      padding: 0 0.5rem;
+    }
+    .navbar-close {
+      width: 100%;
+    }
+    .navbar-nav {
+      margin: 4rem 0rem;
+    }
+    .content h1 {
+      font-size: 18px;
+      padding: 12px;
+      line-height: 8vw;
+    }
 }
