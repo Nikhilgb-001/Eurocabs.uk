@@ -416,11 +416,14 @@ textarea {
     line-height: 7vw;
     text-align: justify;
   }
+  .card-item {
+    max-width: 300px;
+  }
   .contact-div {
     padding: 9vw 0 9vw 0;
   }
   .form-container {
-    width: 85%;
+    width: 83%;
   }
   .form-container h2 {
     text-align: center;
