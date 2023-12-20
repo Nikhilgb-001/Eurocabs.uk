@@ -263,7 +263,7 @@ a {
 /* Mobile-first styles */
 .main-card {
   width: 50%;
-  padding: 6vw;
+  padding: 2vw 0 6vw 0;
   margin: 0 auto;
 }
 
