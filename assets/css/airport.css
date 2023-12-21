@@ -218,6 +218,12 @@ a {
 
 .card-body-airport ul li i {
   margin-right: 18px;
+  margin-right: 15px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  padding: 12px;
+  border-radius: 50px;
 }
 
 /* Styles for note cards */
@@ -247,6 +253,12 @@ a {
   font-size: 24px;
   margin-right: 10px;
   color: #164b5a;
+  margin-right: 15px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  padding: 12px;
+  border-radius: 50px;
 }
 
 .note-header h3 {
@@ -288,6 +300,13 @@ a {
 
 .card-header i {
   margin-right: 17px;
+  margin-right: 15px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  padding: 10px;
+  border-radius: 50px;
+  font-size: 22px;
 }
 
 .card-header h2 {
@@ -297,6 +316,10 @@ a {
 .card-body {
   display: flex;
   flex-direction: column;
+}
+
+.special {
+  line-height: 34px;
 }
 
 li i {
