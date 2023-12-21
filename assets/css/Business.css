@@ -205,6 +205,10 @@ a {
   text-align: left;
 }
 
+.icon {
+  margin-right: 15px;
+}
+
 /* footer css */
 
 .footer {
@@ -302,7 +306,7 @@ a {
     width: 100%;
     font-size: 12px;
     line-height: 30px;
-    text-align:start;
+    text-align: start;
   }
   .content h2 {
     font-size: 18px;
