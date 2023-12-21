@@ -65,16 +65,6 @@ a {
   color: #fff;
 }
 .navbar-collapse {
-  /* position: fixed;
-  top: 0;
-  right: 0;
-  height: 100vh;
-  background-color: #000000;
-  width: 240px;
-  padding: 1.9rem;
-  transform: translateX(100%);
-  transition: all 0.5s ease; */
-
   position: fixed;
   top: 0;
   right: 0;
@@ -165,12 +155,9 @@ a {
 /* corporate-section */
 
 .services-grid {
-  /* display: grid;
-    grid-template-columns: repeat(2, 1fr); */
-  /* grid-gap: 20px; */
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 30px;
   flex-wrap: wrap;
   width: 90%;
   margin: auto;
@@ -248,6 +235,65 @@ a {
   text-align: justify;
 }
 
+.corporate-info {
+  padding: 20px;
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 4vw 0 4vw 0;
+}
+
+.feature {
+  text-align: center;
+  max-width: 300px;
+  border-image: linear-gradient(
+      to right,
+      red,
+      orange,
+      yellow,
+      green,
+      blue,
+      indigo,
+      violet
+    )
+    1;
+  width: 300px; /* Adjust the width as needed */
+  border-width: 2px;
+  border-style: solid;
+  padding: 2vw;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.feature p {
+  padding: 14px;
+  letter-spacing: 1px;
+}
+
+.feature h3 {
+  padding: 12px;
+}
+
+.feature i {
+  font-size: 48px;
+  margin-bottom: 10px;
+  color: #1f1f1f;
+}
+
+.consultation {
+  background-color: #f4f4f4;
+  text-align: center;
+  padding: 40px;
+}
+
+.consultation button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
 .faq-container {
   max-width: 800px;
   margin: 0 auto;
@@ -287,6 +333,10 @@ a {
   font-weight: bold;
 }
 
+.faq-answer i {
+  margin-right: 12px;
+}
+
 .faq-answer ul {
   list-style-type: disc;
   margin-left: 20px;
@@ -305,6 +355,13 @@ a {
 
 .faq-item.active .faq-question i {
   transform: rotate(45deg); /* Changing icon rotation on expansion */
+}
+
+.fa-clock,
+.fa-coins,
+.fa-user-tie,
+.fa-laptop {
+  margin-right: 15px;
 }
 
 .form-div {
@@ -372,6 +429,8 @@ input[type="submit"] {
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
+  width: 200px;
+  font-weight: 600;
 }
 
 input[type="submit"]:hover {
@@ -398,7 +457,7 @@ input[type="submit"]:hover {
   justify-content: center;
   flex-wrap: wrap;
   margin: 2em 0;
-  gap: 18px;
+  gap: 45px;
 }
 
 .plan {
@@ -411,6 +470,25 @@ input[type="submit"]:hover {
 .plan--light {
   color: #4e4e4e;
   background: linear-gradient(-45deg, #e5e3e8, #fafafa);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  max-width: 300px;
+  border-image: linear-gradient(
+      to right,
+      red,
+      orange,
+      yellow,
+      green,
+      blue,
+      indigo,
+      violet
+    )
+    1;
+  border-width: 2px;
+  border-style: solid;
+  padding: 2vw;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .plan--light .plan-price {
@@ -424,17 +502,39 @@ input[type="submit"]:hover {
 
 .plan--accent {
   color: #fff;
-  background: linear-gradient(-45deg, #00a1ab, #3741a0);
+  background: linear-gradient(-45deg, #e5e3e8, #fafafa);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  max-width: 300px;
+  border-image: linear-gradient(
+      to right,
+      red,
+      orange,
+      yellow,
+      green,
+      blue,
+      indigo,
+      violet
+    )
+    2;
+  border-width: 2px;
+  border-style: solid;
+  padding: 2vw;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .plan--accent .btn {
-  color: #4e4e4e;
-  background: #fff;
+  color: #ffffff;
+  background: #4e4e4e;
 }
 
 .plan-title {
-  text-transform: uppercase;
+  text-transform: capitalize;
+  padding: 12px;
+  display: inline;
   margin: 0 0 1em;
+  font-size: 18px;
 }
 
 .plan-price {
@@ -485,6 +585,12 @@ input[type="submit"]:hover {
 .btn--dark {
   color: #fff;
   background: #4e4e4e;
+}
+
+.service i {
+  font-size: 48px;
+  margin-bottom: 10px;
+  color: #007bff; /* Change color as desired */
 }
 
 /* footer css */
