@@ -965,14 +965,6 @@ textarea {
   color: #333;
 }
 
-.social-icons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
 
 .social-icons {
   display: -webkit-box;
