@@ -435,6 +435,18 @@ input[type="submit"] {
   font-weight: 600;
 }
 
+#nextBtn {
+  background-color: #000000;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  width: 200px;
+  font-weight: 600;
+}
+
 input[type="submit"]:hover {
   background-color: #fede00;
   color: #000;

@@ -18,6 +18,27 @@ faqItems.forEach((item) => {
   });
 });
 
+// form code
+let currentStep = 1;
+const totalSteps = 3;
+
+// Show initial step on page load
+document.getElementById("step1").style.display = "block";
+
+function nextStep() {
+  const currentSection = document.getElementById(`step${currentStep}`);
+  if (currentStep < totalSteps) {
+    currentSection.style.display = "none";
+    currentStep++;
+    document.getElementById(`step${currentStep}`).style.display = "block";
+
+    if (currentStep === totalSteps) {
+      document.getElementById("submitBtn").style.display = "block";
+      document.getElementById("nextBtn").style.display = "none";
+    }
+  }
+}
+
 gsap.from(".navbar", {
   y: -50,
   duration: 1,
