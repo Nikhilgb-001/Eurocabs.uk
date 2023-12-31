@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Infinity Slider</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .slider-container {
+            position: relative;
+            width: 70%;
+            overflow: hidden;
+            display: block;
+            margin: 20px auto;
+        }
+
+        .slider {
+            display: flex;
+            width: 100%;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slide {
+            flex: 1;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+            display: none;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .slide p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .slide.active {
+            display: block;
+        }
+
+        /* Navigation buttons */
+        .prev,
+        .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #333;
+            color: white;
+            cursor: pointer;
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="slider-container">
+        <div class="slider">
+            <div class="slide">
+                <img src="assets/images/bg-img-1.jpg" alt="Image 1">
+                <p>
+                    <!-- Your content for slide 1 here... -->
+                </p>
+            </div>
+            <div class="slide">
+                <img src="assets/images/bg-img-2.jpg" alt="Image 1">
+                <p>
+                    <!-- Your content for slide 2 here... -->
+                </p>
+            </div>
+            <div class="slide">
+                <img src="assets/images/Luxury cars.png" alt="Image 1">
+                <p>
+                    <!-- Your content for slide 3 here... -->
+                </p>
+            </div>
+            <div class="slide">
+                <img src="assets/images/bg-img-1.jpg" alt="Image 1">
+                <p>
+                    <!-- Your content for slide 4 here... -->
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let slideIndex = 0;
+
+        function showSlides() {
+            const slides = document.querySelectorAll('.slide');
+            if (slideIndex >= slides.length) {
+                slideIndex = 0;
+            } else if (slideIndex < 0) {
+                slideIndex = slides.length - 1;
+            }
+
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].classList.remove('active');
+            }
+
+            slides[slideIndex].classList.add('active');
+        }
+
+        function changeSlide(n) {
+            slideIndex += n;
+            showSlides();
+        }
+
+        setInterval(() => {
+            slideIndex++;
+            showSlides();
+        }, 1000);
+
+        showSlides();
+
+    </script>
+</body>
+
+</html>
