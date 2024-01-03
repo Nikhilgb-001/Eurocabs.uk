@@ -7,7 +7,6 @@
   box-sizing: border-box;
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
-  text-transform: capitalize;
 }
 
 html,
@@ -121,23 +120,7 @@ input[type="number"] {
   transition: all 1s ease;
 }
 
-/* .register {
-
-}
-
-#download {
-  cursor: pointer;
-  display: inline-block;
-  text-decoration: none;
-  background-color: #f0f1f8;
-  color: #fff;
-  font-weight: 600;
-  padding: 10px 20px;
-  border-radius: 5px;
-} */
-
 /* navbar responsive */
-
 button-responsive {
   outline: 0;
   cursor: pointer;

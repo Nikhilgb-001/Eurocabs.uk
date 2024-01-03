@@ -265,6 +265,7 @@ input[type="number"] {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  gap: 48px;
   padding: 4vw 0 4vw 0;
 }
 
@@ -651,6 +652,7 @@ input[type="submit"]:hover {
   display: none;
 }
 
+
 img {
   max-width: 100%;
   height: auto;
@@ -659,6 +661,7 @@ img {
 .slide p {
   font-size: 18px;
   line-height: 1.6;
+  margin-top: 22px;
 }
 
 .slide.active {
