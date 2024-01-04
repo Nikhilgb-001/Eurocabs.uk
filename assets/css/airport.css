@@ -423,6 +423,65 @@ li {
   color: #777;
 }
 
+/* download our app  */
+
+.app-download {
+  background-color: #f4f4f4;
+  border: 2px solid #39b54a;
+  width: 50%;
+  border-radius: 20px;
+  margin: 0 auto;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-info {
+  margin-bottom: 20px;
+}
+
+.app-info h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.app-info p {
+  font-weight: 600;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.download-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #f4770a;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 24px;
+  transition: background-color 0.3s ease;
+}
+
+
+.download-btn:hover {
+  background-color: #FE3C0D;
+}
+
+.app-image img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
 @media screen and (max-width: 600px) {
   .site-name {
     font-size: 1.8rem;
@@ -443,7 +502,7 @@ li {
   }
   .card-airport {
     width: 333px;
-    margin: 23px;
+    margin: auto;
   }
   .main-card {
     width: 90%;
@@ -473,5 +532,21 @@ li {
     line-height: 5vw;
     text-align: start;
     padding: 12px;
+  }
+
+  .app-download{
+    width: 80%;
+    margin: 0 auto;
+    padding: 50px 0;
+  }
+
+  .app-info h2 {
+    font-size: 1.2em;
+    margin-bottom: 14px;
+  }
+  .app-info p {
+    font-weight: 600;
+    font-size: 1em;
+    margin-bottom: 2px;
   }
 }
