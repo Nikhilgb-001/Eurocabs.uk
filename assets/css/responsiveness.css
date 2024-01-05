@@ -81,8 +81,14 @@
   }
 
   .services-grid {
-    grid-template-columns: repeat(2, 1fr);
-    width: auto;
+    /* grid-template-columns: repeat(2, 1fr); */
+    /* flex-direction: column;
+    width: auto; */
+    flex-wrap: wrap;
+  }
+
+  .service-item {
+    width: 48%;
   }
 
   /* .service-item::after {
@@ -352,8 +358,13 @@
 
   .services-grid {
     padding: 12px;
-    grid-template-columns: 1fr;
-    width: auto;
+    /* grid-template-columns: 1fr;
+    width: auto; */
+    flex-direction: column;
+  }
+
+  .service-item {
+    width: 90%;
   }
 
   .service-item p {
