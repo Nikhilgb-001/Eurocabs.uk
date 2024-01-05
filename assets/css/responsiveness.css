@@ -1,3 +1,4 @@
+
 @media (max-width: 1024px) {
   #navbar {
     height: 90px;
@@ -16,7 +17,10 @@
 
   #content {
     height: calc(100% - 90px);
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 
   .left {
@@ -84,7 +88,8 @@
     /* grid-template-columns: repeat(2, 1fr); */
     /* flex-direction: column;
     width: auto; */
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 
   .service-item {
@@ -185,13 +190,17 @@
   .accordion button .icon {
     top: 50%;
     right: -15px;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
   }
 
   .accordion .accordion-content {
     opacity: 0;
     max-height: 0;
     overflow: hidden;
+    -webkit-transition: opacity 200ms linear, max-height 200ms linear;
+    -o-transition: opacity 200ms linear, max-height 200ms linear;
     transition: opacity 200ms linear, max-height 200ms linear;
     will-change: opacity, max-height;
   }
@@ -209,9 +218,16 @@
   }
 
   #download-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 90%;
     height: 75vh;
     padding: 3vw;
@@ -237,6 +253,7 @@
   /* contact form */
 
   .form {
+    -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     width: 90%;
   }
@@ -245,7 +262,9 @@
     bottom: initial;
     top: -75px;
     right: 65px;
-    transform: scale(0.95);
+    -webkit-transform: scale(0.95);
+        -ms-transform: scale(0.95);
+            transform: scale(0.95);
   }
 
   .contact-form:before {
@@ -255,13 +274,17 @@
   }
 
   .square {
-    transform: translate(140%, 43%);
+    -webkit-transform: translate(140%, 43%);
+        -ms-transform: translate(140%, 43%);
+            transform: translate(140%, 43%);
     height: 350px;
   }
 
   .big-circle {
     bottom: 75%;
-    transform: scale(0.9) translate(-40%, 30%);
+    -webkit-transform: scale(0.9) translate(-40%, 30%);
+        -ms-transform: scale(0.9) translate(-40%, 30%);
+            transform: scale(0.9) translate(-40%, 30%);
     right: 50%;
   }
 
@@ -360,7 +383,10 @@
     padding: 12px;
     /* grid-template-columns: 1fr;
     width: auto; */
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 
   .service-item {
@@ -544,7 +570,8 @@
     padding: 8px;
     border-radius: 5px;
     border: 1px solid #ccc;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     font-size: 16px;
   }
   select {
